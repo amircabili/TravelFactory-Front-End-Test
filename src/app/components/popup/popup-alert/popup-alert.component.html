@@ -1,0 +1,30 @@
+<div class="PopupAlertComponent">
+  <div class="modalHeader">
+    <div class="row m-0">
+      <div class="col-sm-1 col-xs-1">
+        <div class="exitButtonWrapper">
+          <button alt=""  class="exitButton pull-left"
+                  (click)="finishFunction('')">x
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="modalContent">
+    <div class="itemWrapper">
+      <div class="row mt-5  ">
+        <div class="col-md-12 col-sm-12 text-left  ">
+          <div class="mx-auto text-center ">
+             <h3>{{data}}</h3>
+          </div>
+          <div class="row mt-5">
+            <div class="col-sm-12 col-xs-12 mx-auto text-center">
+              <button class="btn btn-info px-4  text center" (click)="finishFunction('approve')"> Delete  </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

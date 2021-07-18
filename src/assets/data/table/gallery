@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "Id": "1",
+      "Title": "alex jonathan",
+      "Company": "Twitter Inc.",
+      "Type": "movie",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+      "Poster": "assets/pics/alex_jonathan.jpg",
+      "role": "CEO"
+    },
+    {
+      "Id": "2",
+      "Title": "janeth carton",
+      "Company": "Twitter Inc.",
+      "Type": "movie",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+       "Poster": "assets/pics/janeth_carton.jpg",
+       "role": "Graphic Designer"
+     },
+    {
+      "Id": "3",
+      "Title": "john smith",
+      "Company": "Twitter Inc.",
+      "Type": "movie",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+      "Poster": "assets/pics/john-smith.jpg",
+      "role": "Marketing manager"
+      },
+    {
+      "Id": "4",
+      "Title": "michael zimber",
+      "Year": "19730101",
+      "Type": "movie",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+       "Poster": "assets/pics/michael_zimber.jpg",
+        "role": "Sales manager"
+     },
+    {
+      "Id": "5",
+      "Title": "monica smith",
+      "Company": "Twitter Inc.",
+      "Type": "movie",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+       "Poster": "assets/pics/monica_smith.jpg",
+        "role": "Sales manager"
+     },
+    {
+      "Id": "6",
+      "Title": "sandra smith",
+      "Company": "Twitter Inc.",
+      "Type": "series",
+      "Address": "Tower 795 Folsom Ave, Beautiful, Suite 600, San Francisco, CA",
+       "Poster": "assets/pics/sandra_smith.jpg",
+        "role": "Graphic Designer"
+     }
+  ],
+  "totalResults": "10"
+}

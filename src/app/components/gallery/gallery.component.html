@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <div class="col-sm-12 col-xs-12 topButtonsWrappr">
+    <div class="d-flex text-white row justify-content-center">
+      <div class="col-md-1 col-sm-12">
+        <div class="p-1 float-left"><button (click)="addItem()" class="btn add btn-info px-3">Add +</button></div>
+      </div>
+      <div class="col-md-1 col-sm-12">
+        <div class="p-1 float-left"><button (click)="refresh()" class="btn btn-info px-3">Refresh Page (F5)</button></div>
+      </div>
+      <div class="col-md-1 col-sm-12">
+        <div class="dropdown m-1 ">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort By
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a (click)="this.globalFunctionsService.applyChangeView = !this.globalFunctionsService.applyChangeView" class="dropdown-item" href="#">Change view</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12"></div>
+    </div>
+  </div>
+  <div class="itemWrapper" *ngFor="let item of globalFunctionsService.filteredOptions | async; let indexItem = index" >
+    <div class="row" [ngClass]="globalFunctionsService.applyChangeView ? '':'viewChange' " >
+        <div class="col-md-4 col-sm-12 p-0 posterWrapper" (click)="openPopUpItem(item)">
+          <div class="row p-0" >
+            <div class="col-md-12 col-sm-12 text-center" >
+              <img  [src]="item.Poster" class="card-img-top"/>
+            </div>
+            <div class="col-md-12 col-sm-12" >
+              <p class="card-text text-center pt-2"><span> {{item.role}}</span></p>
+            </div>
+          </div>
+
+        </div>
+
+          <div class="col-md-8 col-sm-12" >
+            <div class="row mt-2" (click)="openPopUpItem(item)">
+              <div class="col-sm-12 col-xs-12"><h2 class="card-title"> {{item.Title}}</h2></div>
+              <div class="col-sm-12 col-xs-12"><p class="card-text"><b>{{(item.Company)}}</b></p></div>
+              <div class="col-sm-12 col-xs-12"><p class="card-text">{{item.Address}} Shekel</p></div>
+              <br>
+            </div>
+            <div class="row buttonsWrapper">
+              <div class="row p-0 border-0 mw-100 mt-1">
+                <div class="col-sm-10 col-xs-6 p-1 text-left"> </div>
+                <div class="col-sm-1 col-xs-6 p-1 text-right"><button (click)="openPopUpItem(item)" class="btn btn-info px-3 updateIcon"> </button></div>
+                <div class="col-sm-1 col-xs-6  p-1 text-right"><button (click)="delete(item)" class="btn btn-info px-3 deleteIcon"> </button></div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
